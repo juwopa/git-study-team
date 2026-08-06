@@ -46,17 +46,15 @@ feedback-주원을 먼저 merge했고, 그 다음은 feedback-성규 -> feedback
 
 ### 6.마무리 정리
 # Git 기초 요약
-| 주제 | 핵심 명령어 | 한 줄 설명 |
-|---|---|---|
-| 저장소 만들기 | `git init` / `git clone <url>` | 새로 시작하거나 기존 저장소 복제 |
-| Commit | `git add .` → `git commit -m "메시지"` | 변경사항을 기록으로 저장 |
-| Push / Pull | `git push` / `git pull` | 원격 저장소와 주고받기 |
-| Branch | `git checkout -b <이름>` | 새 작업 공간 분리해서 작업 |
-| Merge | `git merge <브랜치명>` | 다른 브랜치 내용을 합치기 |
-| 충돌 해결 | 충돌 표시(`<<<`~`>>>`) 직접 수정 → `git add` → `git commit` | 같은 부분을 여러 명이 고쳤을 때 정리 |
-| Stash | `git stash` → `git stash pop` | 커밋 전 변경사항 잠깐 보관/복원 |
-
-**흐름**: 저장소 생성 → 수정 → commit → push/pull → (branch로 나눠 작업 → merge) → 충돌 있으면 수정 → 급할 때 stash
+| 주제 | GitHub Desktop에서 하는 법 |
+|---|---|
+| 저장소 만들기 | File → New Repository (또는 Clone repository) |
+| Commit | 변경 파일 체크 → Summary 입력 → "Commit to main" 클릭 |
+| Push / Pull | 상단의 "Push origin" / "Pull origin" 버튼 클릭 |
+| Branch | 상단 "Current Branch" → New Branch |
+| Merge | Branch 메뉴 → Merge into current branch |
+| 충돌 해결 | 충돌 파일 열어 직접 수정 → 저장 → Continue merge 클릭 |
+| Stash | 브랜치 전환 시 뜨는 "Stash changes" 팝업 이용 (나중에 Restore로 복원) |
 
 # 팀 구성 및 역할
 | 이름 | 역할 | 담당 업무 |
